@@ -1,0 +1,5 @@
+[window]
+title = Dave The Duck
+top_most = True
+trans_color = #eeefff
+overrideredirect = True
