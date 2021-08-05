@@ -48,6 +48,9 @@ David the duck is an adorable vibrant character that my friend Connie drew. I jo
 </p>
 <br />
 <h2 align="center" id="built-with-love">Built with 💕</h2>
+<p align="center">
+Using python <a href="https://wiki.python.org/moin/TkInter">tkinter</a>
+</p> 
 <br />
 
 <!-- GETTING STARTED -->
