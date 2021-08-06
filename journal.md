@@ -145,3 +145,5 @@ then i just add the x and y to themselves so that i dont do the same math again 
 if i did that it would go on forever, being very small
 its like cutting a race in half then cutting it again over and over
 
+i multiplied by the slope instead of getting the angle via arctan, it should work now.
+
