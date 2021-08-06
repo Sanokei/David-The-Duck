@@ -147,3 +147,13 @@ its like cutting a race in half then cutting it again over and over
 
 i multiplied by the slope instead of getting the angle via arctan, it should work now.
 
+i forgot how much im bad at math ;-;
+
+okay so i was trying to get perma versions of x and y
+i created perma and perm i just screamed into my pillow
+this whole time
+this error
+has been a typo
+i want to die
+
+okay so the way im finding x is not gonna work 
