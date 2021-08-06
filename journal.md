@@ -117,3 +117,31 @@ so im not too upset about changing it last minute.
 ## Day 4 (8/6)
 
 One day until its Cons birthday, i gotta make it count.
+
+im going insane.
+
+so apparently processes dont work with the window api im using because of something with pickle.
+
+okay so instead imma just have a simple nested for loop. 
+
+instead of going one direction, im going to make it so that it goes to a point on the screen.
+
+okay this is hours later with a new version. 
+
+I deleted how it moves all together now it gets a point on the screen
+Let that be B
+David is at A
+it gets the distance, let that be dy
+and then get all the frames possible between these two points. then from there it creates an animation loop
+that coresponds to the number of aviable frames.
+it travels the incrimiate distance on the line 
+getting the x and y incrimant from
+```
+y = slope * (The incriment * current frame)
+x = Square_root_of((The incriment * current frame)^2 + y)
+```
+then i just add the x and y to themselves so that i dont do the same math again from that new point
+
+if i did that it would go on forever, being very small
+its like cutting a race in half then cutting it again over and over
+
