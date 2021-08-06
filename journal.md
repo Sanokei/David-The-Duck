@@ -1,6 +1,5 @@
 # David the Duck
-@author William (Sano)
-### a project for a dear friend in which a duck she drew goes on adventures on her screen.
+a project for a dear friend in which a duck she drew goes on adventures on her screen.
 
 ## Day 0 (8/2)
 using gifs as part of the animation
@@ -94,3 +93,27 @@ simple change for rootx -> rooty
 realized the speed and time could be 0 so i just add 1 so that doesnt happen
 
 slimmed down the import from * (all) to the select classes needed.
+
+adding new feature in which reddit gets displayed on a window and gets pushed into the screen
+
+## Day 3 (8/5)
+I have two days remaining.
+
+I have to figure out what is vital and what to cut.
+
+I decided to continue the reddit get thing. But I think a random youtube video getting played and sent via duck is better.
+so I will be working on that.
+
+scratch the creating a new window portion. It makes it very complicated. Imma spawn a new webBrowser off screen.
+
+I did nothing today to work on this. oops.
+
+Well its 11:05 and i didnt want to work on it because the errors i faced meant i would have to go into the 
+deep and scary world of... multi threading *shivers*
+
+okay so i just set up the threads but then i read through it and i should be using processes instead which are quite simialr
+so im not too upset about changing it last minute.
+
+## Day 4 (8/6)
+
+One day until its Cons birthday, i gotta make it count.
