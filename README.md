@@ -1,8 +1,6 @@
 <p align="center">
   <a href="https://github.com/SanoKei/David-The-Duck">
     <img src="https://github.com/Sanokei/David-The-Duck/blob/main/resources/images/david_the_duck_logo.jpg" alt="Logo_Banner" width="75%" height="50%">
-    <br />
-    <img src="https://github.com/Sanokei/David-The-Duck/blob/main/resources/images/GifODavid.gif" align="center" alt="Logo_Pic" width="15%" height="30%">
   </a>
 </p>
 
@@ -44,7 +42,7 @@ David the duck is an adorable vibrant character that my friend Connie <a href="h
 <p align="center"> <i>The original David the Duck picture drawn by Connie</i> </p>
   
 <br />
-<h2 align="center" id="built-with-love">Built with 💕 and <img src="https://github.com/Sanokei/David-The-Duck/blob/main/resources/images/quack.png" align="center" alt="Logo_Pic" width="15%" height="12%"></h2>
+<h2 align="center" id="built-with-love"> <img src="https://github.com/Sanokei/David-The-Duck/blob/main/resources/images/GifODavid.gif" align="center" alt="Logo_Pic" width="15%" height="30%">Built with 💕 and <img src="https://github.com/Sanokei/David-The-Duck/blob/main/resources/images/quack.png" align="center" alt="Logo_Pic" width="15%" height="12%"></h2>
 <p align="center">
 Using python <a href="https://wiki.python.org/moin/TkInter">tkinter</a>
 </p> 
