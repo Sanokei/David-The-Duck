@@ -169,3 +169,11 @@ i cant just add incrimint ammounts to x and y.
 
 this day has been hell.
 
+## Day 5 (8/7)
+
+after 5 days i think ive done enough to feel like ive put in the effort
+but also its not enough for me to be happy.
+
+i wish i had more experience when it came to this api.
+
+Happy Birthday Cons <3
