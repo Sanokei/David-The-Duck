@@ -156,4 +156,16 @@ this error
 has been a typo
 i want to die
 
-okay so the way im finding x is not gonna work 
+im so dumb.
+im so so dumb.
+im a stupid man.
+
+this is why coding tired isnt good.
+
+i dont need all that math.
+
+since i know the ending location
+i cant just add incrimint ammounts to x and y.
+
+this day has been hell.
+
