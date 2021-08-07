@@ -1,8 +1,8 @@
 <p align="center">
   <a href="https://github.com/SanoKei/David-The-Duck">
-    <img src="https://github.com/Sanokei/David-The-Duck/blob/main/resources/images/GifODavid.gif" alt="Logo_Banner" width="33%" height="50%">
-    <br />
     <img src="https://github.com/Sanokei/David-The-Duck/blob/main/resources/images/david_the_duck_logo.jpg" alt="Logo_Banner" width="75%" height="50%">
+    <br />
+    <img src="https://github.com/Sanokei/David-The-Duck/blob/main/resources/images/GifODavid.gif" align="center" alt="Logo_Pic" width="15%" height="30%">
   </a>
 </p>
 
@@ -27,11 +27,11 @@
 
 
 <!-- ABOUT THE PROJECT -->
-<h2 align="center" id="about">About The Project</h2>
+<h2 align="center" id="about"><img src="https://github.com/Sanokei/David-The-Duck/blob/main/resources/images/GifODavid.gif" align="center" alt="Logo_Pic" width="70" height="70">Quacking at the Project</h2>
 <br />
-<h3 align="center" id="about-about"><img src="https://github.com/Sanokei/David-The-Duck/blob/main/resources/images/GifODavid.gif" align="center" alt="Logo_Pic" width="70" height="70"><strong>About</strong></h3>
+<h3 align="center" id="about-about"><img src="https://github.com/Sanokei/David-The-Duck/blob/main/resources/images/GifODavid.gif" align="center" alt="Logo_Pic" width="70" height="70"><strong>About Quack</strong></h3>
 <p align="center">
-A desktop "pet" that waddles around your screen and gets into mischeive. Heavily inspired by <a href="https://samperson.itch.io/desktop-goose">Desktop Goose</a>. There is only a Windows version.
+A desktop pet that waddles around your screen and gets into mischeive. Heavily inspired by <a href="https://samperson.itch.io/desktop-goose">Desktop Goose</a>. There is only a Windows version.
 </p>  
 <br />
 <h3 align="center" id="about-orgins"><img src="https://github.com/Sanokei/David-The-Duck/blob/main/resources/images/GifODavid.gif" align="center" alt="Logo_Pic" width="70" height="70"><strong>Orgins</strong></h3>
@@ -44,14 +44,14 @@ David the duck is an adorable vibrant character that my friend Connie <a href="h
 <p align="center"> <i>The original David the Duck picture drawn by Connie</i> </p>
   
 <br />
-<h2 align="center" id="built-with-love">Built with 💕</h2>
+<h2 align="center" id="built-with-love">Built with 💕 and <img src="https://github.com/Sanokei/David-The-Duck/blob/main/resources/images/quack.png" align="center" alt="Logo_Pic" width="15%" height="12%"></h2>
 <p align="center">
 Using python <a href="https://wiki.python.org/moin/TkInter">tkinter</a>
 </p> 
 <br />
 
 <!-- GETTING STARTED -->
-<h2 id="start">Quack on with it!</h2>
+<h2 id="start"><img src="https://github.com/Sanokei/David-The-Duck/blob/main/resources/images/GifODavid.gif" align="center" alt="Logo_Pic" width="70" height="70">Quack on with it!</h2>
 Download a copy of David in the <a href="https://github.com/Sanokei/David-The-Duck/releases">releases</a>
 
 <!-- ROADMAP -->
