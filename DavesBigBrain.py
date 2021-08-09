@@ -27,6 +27,7 @@ from threading import Thread
 from selenium import webdriver
 from win32api import GetMonitorInfo, MonitorFromPoint
 from win32com.client import Dispatch
+from playsound import playsound
 
 
 # In[ ]:
@@ -86,24 +87,11 @@ def get_direction_for_david(action_rand, cords):
 # get a random spot on the screen
 def get_random_on_screen(width,height):
     x,y = random.choice(range(width - 128)),random.choice(range(height - barHeight - 128))
-    if (debug):
-        print("-"*20)
-        print("random point on screen:")
-        print("x: " + str(x))
-        print("y: " + str(y))
-        print("-"*20)
     return [x,y]
 
 def get_incrim_of_cords(cords,maxFrame):
     new_x = (cords[0] - root.winfo_rootx()) / maxFrame
     new_y = (cords[1] - root.winfo_rooty()) / maxFrame
-    if (debug):
-        print("-"*20)
-        print("incrimimants:")
-        print("maxFrame: " + str(maxFrame))
-        print("x: " + str(new_x))
-        print("y: " + str(new_y))
-        print("-"*20)
     return [new_x,new_y]
 
 
@@ -121,6 +109,8 @@ moveLeft = ["DAVE_MOVE-LEFT_0_0.gif","DAVE_MOVE-LEFT_0_1.gif"]
 moveRight = ["DAVE_MOVE-RIGHT_0_0.gif","DAVE_MOVE-RIGHT_0_1.gif"]
 moveYLeft = ["DAVE_MOVE_Y-LEFT_0_0.gif","DAVE_MOVE_Y-LEFT_0_1.gif","DAVE_MOVE_Y-LEFT_0_2.gif","DAVE_MOVE_Y-LEFT_0_3.gif","DAVE_MOVE_Y-LEFT_0_2.gif","DAVE_MOVE_Y-LEFT_0_1.gif",]
 moveYRight = ["DAVE_MOVE_Y-RIGHT_0_0.gif","DAVE_MOVE_Y-RIGHT_0_1.gif","DAVE_MOVE_Y-RIGHT_0_2.gif","DAVE_MOVE_Y-RIGHT_0_3.gif","DAVE_MOVE_Y-RIGHT_0_2.gif","DAVE_MOVE_Y-RIGHT_0_1.gif",]
+quackLeft = ["DAVE_QUACK-LEFT_0_0.gif","DAVE_QUACK-LEFT_0_1.gif"]
+quackRight = ["DAVE_QUACK-RIGHT_0_0.gif","DAVE_QUACK-RIGHT_0_1.gif"]
 
 ### Animation ###
 animation = {
@@ -130,7 +120,9 @@ animation = {
     "moveRight": moveRight,
     "moveYLeft": moveYLeft,
     "moveYRight": moveYRight,
-    "webRight": idleRight
+    "webRight": idleRight,
+    "quackLeft": quackLeft,
+    "quackRight": quackRight
 }
 
 
@@ -213,44 +205,10 @@ class David(Frame):
         ### move ###
         perm_x += hardPerm[0]
         perm_y += hardPerm[1]
-            
-        if (debug): 
-            print("-"*20)
-            print("perm_x in dave action:" + str(perm_x))
-            print("perm_y in dave action:" + str(perm_y))
-            print("X:" + str(root.winfo_rootx()))
-            print("Y:" + str(root.winfo_rooty()))
-            print("-"*20)
                 
         root.geometry("+{}+{}".format(str(int(math.ceil(perm_x))),str(int(math.ceil(perm_y)))))
 
         return [perm_x,perm_y]
-            
-        ### web ###
-        if("webRight" in action):
-            # create window
-            if(var == 1):
-                driver = webdriver.Chrome(executable_path=version_to_path.get(chrome_version))
-                url = "https://www.youtube.com/watch?v=" + url
-                driver.get(url)
-                #window
-            
-            
-            # spawn window randomly away from the screen and on the y access
-
-
-            # move david to the right, move him outta frame
-
-#             x = spd * var
-#             if(x+root.winfo_rootx() >= root.winfo_screenwidth() - photo.width()):
-#                 root.geometry("+{}+{}".format(str(root.winfo_screenwidth() - photo.width() - 1),str(root.winfo_rooty())))
-#                 return True
-#             else:
-#                 root.geometry("+{}+{}".format(str(x+root.winfo_rootx()),str(root.winfo_rooty())))
-#                 return False
-
-            # when off screen, then bring onto screen
-            
 
     '''Create the animation of David'''
     def createAnimation(self,imagelist,filePath,perFrame):
@@ -303,7 +261,6 @@ def mainLoop(david,canvas):
     else:
         act_rand = action_rand
     ranSoFarAway = get_random_on_screen(root.winfo_screenwidth(),root.winfo_screenheight())
-    print(str(action_rand[0]))
     if("move" in act_rand):
         act_rand = get_direction_for_david(action_rand,ranSoFarAway)
     maxFrame = t * len(animation.get(act_rand))
@@ -318,11 +275,6 @@ def mainLoop(david,canvas):
             else:
                 david.createAction(animation.get(act_rand),file_name[index],perFrame,action_rand,spd,roll,perm_x,perm_y,hardPerm)
             time.sleep(slp)
-    if(debug):
-        print("-"*20)
-        print("perFrame: " + str(perFrame))
-        print("maxFrame: " + str(maxFrame))
-        print("-"*20)
 
 
 # In[ ]:
